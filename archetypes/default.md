@@ -6,5 +6,4 @@ summary = ""
 tags = []
 categories = []
 series = []
-cover = ""
 +++

@@ -34,7 +34,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.146.0'
           extended: true # 【关键】使用 Extended 版本，因为 PaperMod 需要
 
       - name: Build

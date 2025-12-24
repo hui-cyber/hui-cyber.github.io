@@ -1,0 +1,18 @@
+{{- if site.Params.comments -}}
+<script src="{{ site.Params.comments.host }}/client.js"
+        data-repo="{{ site.Params.comments.repo }}"
+        data-repo-id="{{ site.Params.comments.repoId }}"
+        data-category="{{ site.Params.comments.category }}"
+        data-category-id="{{ site.Params.comments.categoryId }}"
+        data-mapping="{{ site.Params.comments.mapping }}"
+        data-strict="{{ site.Params.comments.strict }}"
+        data-reactions-enabled="{{ site.Params.comments.reactionsEnabled }}"
+        data-emit-metadata="{{ site.Params.comments.emitMetadata }}"
+        data-input-position="{{ site.Params.comments.inputPosition }}"
+        data-theme="{{ site.Params.comments.theme }}"
+        data-lang="{{ site.Params.comments.lang }}"
+        data-loading="{{ site.Params.comments.loading }}"
+        crossorigin="anonymous"
+        async>
+</script>
+{{- end -}}

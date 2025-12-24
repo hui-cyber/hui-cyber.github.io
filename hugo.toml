@@ -3,13 +3,55 @@ baseURL = "https://hui-cyber.github.io/"
 languageCode = "zh-cn"
 title = "我的个人博客"
 theme = "PaperMod"
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 10
 
 [params]
     defaultTheme = "auto"
+    description = "我的个人博客"
+    author = "huihui"
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    ShowRssButtonInSectionTermList = true
+
+    [params.homeInfoParams]
+    Title = "欢迎来到我的博客"
+    Content = "记录学习、项目和日常思考。"
+
+    [params.comments]
+    host = "https://giscus.app"
+    repo = "hui-cyber/hui-cyber.github.io"
+    repoId = "R_kgDOQuJXuQ"
+    category = "Announcements"
+    categoryId = "DIC_kwDOQuJXuc4C0NHn"
+    mapping = "pathname"
+    strict = 0
+    reactionsEnabled = 1
+    emitMetadata = 0
+    inputPosition = "top"
+    theme = "preferred_color_scheme"
+    lang = "zh-CN"
+    loading = "lazy"
     
     [[params.socialIcons]]
     name = "github"
     url = "https://github.com/"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    series = "series"
+
+[permalinks]
+    posts = "/posts/:year/:month/:slug/"
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
 
 [menu]
     [[menu.main]]
@@ -17,3 +59,28 @@ theme = "PaperMod"
     name = "搜索"
     url = "/search/"
     weight = 10
+    [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 20
+    [[menu.main]]
+    identifier = "notes"
+    name = "随记"
+    url = "/notes/"
+    weight = 30
+    [[menu.main]]
+    identifier = "projects"
+    name = "项目"
+    url = "/projects/"
+    weight = 40
+    [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 50
+    [[menu.main]]
+    identifier = "links"
+    name = "友链"
+    url = "/links/"
+    weight = 60

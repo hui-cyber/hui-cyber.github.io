@@ -1,6 +1,6 @@
 +++
-title = "项目：个人博客系统"
-date = 2024-12-24T10:30:00+08:00
+title = "项目：个人博客"
+date = 2025-12-24T10:30:00+08:00
 draft = false
 summary = "基于 Hugo + GitHub Pages 的个人博客系统。"
 tags = ["项目", "Hugo"]

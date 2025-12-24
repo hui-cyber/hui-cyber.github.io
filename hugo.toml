@@ -1,7 +1,7 @@
 # 注意：最后面的斜杠 / 不能少
 baseURL = "https://hui-cyber.github.io/"
 languageCode = "zh-cn"
-title = "我的个人博客"
+title = "huihui's Journal"
 theme = "PaperMod"
 enableRobotsTXT = true
 
@@ -18,10 +18,11 @@ pagerSize = 10
     ShowBreadCrumbs = true
     ShowCodeCopyButtons = true
     ShowRssButtonInSectionTermList = true
+    mainSections = ["posts", "notes", "projects"]
 
     [params.homeInfoParams]
-    Title = "欢迎来到我的博客"
-    Content = "记录学习、项目和日常思考。"
+    Title = "huihui's Journal"
+    Content = "记录学习、项目与日常想法。"
 
     [params.comments]
     host = "https://giscus.app"
@@ -59,6 +60,11 @@ pagerSize = 10
     name = "搜索"
     url = "/search/"
     weight = 10
+    [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 15
     [[menu.main]]
     identifier = "archives"
     name = "归档"

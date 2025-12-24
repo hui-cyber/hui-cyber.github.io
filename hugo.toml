@@ -1,5 +1,5 @@
 # 注意：最后面的斜杠 / 不能少
-baseURL = "https://hui-cyber.github.io/myblog/"
+baseURL = "https://hui-cyber.github.io/"
 languageCode = "zh-cn"
 title = "我的个人博客"
 theme = "PaperMod"

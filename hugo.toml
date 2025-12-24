@@ -1,4 +1,5 @@
-baseURL = "https://example.org/"
+# 注意：最后面的斜杠 / 不能少
+baseURL = "https://hui-cyber.github.io/myblog/"
 languageCode = "zh-cn"
 title = "我的个人博客"
 theme = "PaperMod"
